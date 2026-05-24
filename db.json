@@ -1,0 +1,18 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Arroz Branco",
+      "categoria": "Grãos",
+      "preco": 25.90,
+      "estoque": 50
+    },
+    {
+      "id": 2,
+      "nome": "Feijão Carioca",
+      "categoria": "Grãos",
+      "preco": 12.50,
+      "estoque": 30
+    }
+  ]
+}
