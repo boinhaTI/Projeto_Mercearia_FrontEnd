@@ -15,13 +15,13 @@ export default function ProductCard({produto, onDelete, onEdit}) {
         <p className="text-3xl font-bold text-green-600">R$ {produto.preco.toFixed(2)}</p>
       </div>
 
-      <div className="flex gap-2 mt-5">
+      <div className="flex  gap-2 mt-5">
 
         <button onClick={() => onEdit(produto)}
           className="bg-yellow-400  hover:bg-yellow-500 transition px-4 py-2 rounded-xl">
           Editar
         </button>
-
+        
         <button onClick={() => onDelete(produto.id)}
           className=" bg-red-500 hover:bg-red-600 transition text-white px-4 py-2 rounded-xl">
           Excluir

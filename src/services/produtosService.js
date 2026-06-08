@@ -15,21 +15,14 @@ export async function listarProdutos() {
   return data;
 }
 
-export async function criarProduto(
-  produto
-) {
+export async function criarProduto(produto) {
 
-  const response = await fetch(
-    API_URL,
+  const response = await fetch(API_URL,
     {
       method: "POST",
-      headers: {
-        "Content-Type":
-          "application/json"
-      },
+      headers: {"Content-Type":"application/json"},
       body: JSON.stringify(produto)
-    }
-  );
+    });
 
   if (!response.ok) {
     throw new Error(
@@ -38,28 +31,18 @@ export async function criarProduto(
   }
 
   const data = await response.json();
-
   return data;
 }
 
-export async function atualizarProduto(
-  id,
-  dadosAtualizados
-) {
+export async function atualizarProduto(id, dadosAtualizados) {
 
   const response = await fetch(
     `${API_URL}/${id}`,
     {
       method: "PUT",
-      headers: {
-        "Content-Type":
-          "application/json"
-      },
-      body: JSON.stringify(
-        dadosAtualizados
-      )
-    }
-  );
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(dadosAtualizados)
+    });
 
   if (!response.ok) {
     throw new Error(
