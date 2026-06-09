@@ -27,6 +27,13 @@
       "preco": 1.5,
       "estoque": 10,
       "id": 4
+    },
+    {
+      "nome": "teste",
+      "categoria": "teste",
+      "preco": 50,
+      "estoque": 4,
+      "id": 5
     }
   ]
 }

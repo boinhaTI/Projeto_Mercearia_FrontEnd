@@ -17,6 +17,7 @@ export default function EditModal({ isOpen, produto, onClose, onUpdate }) {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    
 
     await onUpdate({
       ...produto,
